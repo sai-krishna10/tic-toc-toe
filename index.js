@@ -70,7 +70,7 @@
             count = 0;
         }
         else if (g == h && h == i && g != "" && h != "" && i != "") {
-            alert("player  " + d + "  won");
+            alert("player  " + g + "  won");
             result.style.display = "flex";
             game_display.style.display = "none";
             count = 0;
