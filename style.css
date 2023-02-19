@@ -172,6 +172,18 @@ body {
         justify-content: center;
         align-items: center;
     }
+    .container .game-question .que-btn button,
+    .reset button,
+    .start button {
+        height: 7vh;
+        width: 20vw;
+        border-radius: 5px;
+        background-color: blue;
+        color: aliceblue;
+        font-weight: 700;
+        font-size: 15px;
+        margin: 10px;
+    }
 }
 
 @media only screen and (max-width:530px) {
