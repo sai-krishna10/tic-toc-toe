@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, blue, violet);
+    flex-direction: column;
+}
+
+.title {
+    font-size: 20px;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+
+.container {
+    height: 60vh;
+    width: 40vw;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* start button */
+.container .start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .start .start-title a {
+    font-size: 25px;
+    font-weight: 900;
+    color: darkmagenta
+}
+
+.container .start button:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+    color: blue;
+    border: 2px solid blue;
+}
+
+.container .game-question .que-title a {
+    font-size: 25px;
+    font-weight: 900;
+    color: darkmagenta
+}
+
+
+/* game question */
+.container .game-question {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+
+.container .game-question .que-btn button,
+.reset button,
+.start button {
+    height: 7vh;
+    width: 10vw;
+    border-radius: 5px;
+    background-color: blue;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.container .game-question .que-btn button:hover {
+    cursor: pointer;
+    background-color: aliceblue;
+    color: blue;
+    border: 2px solid blue;
+}
+
+
+/* game-screen */
+
+.container .game-display {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .game-display .col {
+    display: flex;
+    flex-direction: row;
+}
+
+.container .game-display .grid {
+    height: 8vh;
+    width: 5vw;
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .game-display .grid:hover {
+    cursor: pointer;
+    border: 2px solid blue;
+}
+
+
+/* result */
+.container .result {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .result a {
+    font-size: 25;
+    font-weight: 900;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkmagenta;
+}
+
+.container .result .reset button:hover {
+    background-color: aliceblue;
+    color: blue;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:700px) {
+    .container {
+        height: 60vh;
+        width: 60vw;
+        background-color: aliceblue;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .start .start-title a {
+        font-size: 20px;
+        font-weight: 900;
+        color: darkmagenta
+    }
+
+    .container .game-display .grid {
+        height: 8vh;
+        width: 8vw;
+        margin: 5px;
+        border-radius: 5px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:530px) {
+    .container {
+        height: 60vh;
+        width: 80vw;
+        background-color: aliceblue;
+        border-radius: 5px;
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .start .start-title a {
+        font-size: 20px;
+        font-weight: 900;
+        color: darkmagenta
+    }
+
+    .container .game-display .grid {
+        height: 8vh;
+        width: 15vw;
+        margin: 5px;
+        border-radius: 5px;
+        border: 2px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .game-question .que-btn button,
+    .reset button,
+    .start button {
+        height: 7vh;
+        width: 20vw;
+        border-radius: 5px;
+        background-color: blue;
+        color: aliceblue;
+        font-weight: 700;
+        font-size: 15px;
+        margin: 10px;
+    }
+}
